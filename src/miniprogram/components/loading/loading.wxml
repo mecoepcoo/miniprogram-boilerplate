@@ -1,0 +1,3 @@
+<view class="loading">
+  <view class="loading__box"></view>
+</view>
