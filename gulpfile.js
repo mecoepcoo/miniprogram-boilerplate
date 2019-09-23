@@ -1,11 +1,11 @@
 const gulp = require('gulp');
-const plumber = require('gulp-plumber');
+const plumber = require('gulp-plumber'); // 发生错误时阻止gulp退出并输出日志
 const less = require('gulp-less'); // 处理less
 const rename = require('gulp-rename'); // 输出时重命名文件
 const cssnano = require('gulp-cssnano'); // 压缩代码
 const autoprefixer = require('autoprefixer'); // 自动添加css前缀
 const postcss = require('gulp-postcss'); // 处理css，配合autoprefixer使用
-const preprocess = require('gulp-preprocess');
+const preprocess = require('gulp-preprocess'); // 注入环境变量
 const del = require('del');
 const eslint = require('gulp-eslint');
 
