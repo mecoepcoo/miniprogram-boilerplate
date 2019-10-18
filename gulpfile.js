@@ -29,7 +29,8 @@ gulp.task('build:style', () => {
       cssnano({
         zindex: false,
         autoprefixer: false,
-        discardComments: { removeAll: true }
+        discardComments: { removeAll: true },
+        reduceIdents: false
       })
     )
     .pipe(
